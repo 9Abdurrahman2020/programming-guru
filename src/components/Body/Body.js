@@ -11,9 +11,12 @@ const Body = () => {
             <Banner/>
             
             <div className="row container mx-auto g-4 shadow pb-4 rounded mb-5">
-            <h1 className="text-center mb-4 text-info">Our Courses</h1>
+            <h1 className="text-center mb-4 text-danger"><span className="text-success">Our</span> Courses</h1>
             {
-                courses.slice(0,4).map(course=> <Course course={course}/>)
+                courses.slice(0,4).map(course=> <Course 
+                    key={course.id}
+                    course={course}
+                    />)
             }
             <Link className="btn btn-danger mx-auto"style={{width:'170px'}} to="/courses">
             Show All Courses

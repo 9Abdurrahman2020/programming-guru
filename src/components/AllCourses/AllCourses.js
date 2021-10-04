@@ -1,15 +1,17 @@
 import React ,{ useContext} from 'react';
 import { coursesContext } from '../../App';
-import Course from '../Course/Course';
 import DetailCourse from '../DetailCourse/DetailCourse';
 const AllCourses = () => {
     const courses = useContext(coursesContext);
-    console.log(courses);
     return (
         <div className="container my-5">
+            <h2 className="text-success mb-5">All Courses</h2>
             <div className="row g-4">
             {
-                courses.map(course=><DetailCourse course={course}></DetailCourse>)
+                courses.map(course=><DetailCourse 
+                    key={course.id}
+                    course={course}
+                    ></DetailCourse>)
             }
             </div>
         </div>

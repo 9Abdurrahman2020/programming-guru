@@ -2,7 +2,7 @@ import React from 'react';
 import Rating from 'react-rating';
 import './Course.css'
 const Course = (props) => {
-    const{name,img,create} = props.course;
+    const{name,img,create,price} = props.course;
     return (
         <div className="col-md-6 p-4">
             <div className="d-flex">
@@ -12,7 +12,7 @@ const Course = (props) => {
             <div className="">
                 <h5>{name.slice(0,41)}...</h5>
                 <p className="mb-0">by: <small>{create}</small></p>
-                <h6 className="mb-1">Price: $34</h6>
+                <h6 className="mb-1">Price: ${price}</h6>
                 <button className="buy-now-btn">Buy Now</button>              
             </div>
             </div>
