@@ -4,11 +4,11 @@ import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
-import NotFound from './components/NotFound/NotFound';
 import AllCourses from './components/AllCourses/AllCourses';
 import { createContext, useEffect, useState } from 'react';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
+import NotFound from './components/NotFound/NotFound';
 export const coursesContext = createContext('courses');
 function App() {
   const [courses,setCourses] = useState([]);

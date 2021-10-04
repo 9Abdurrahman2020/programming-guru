@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { coursesContext } from '../../App';
 import Banner from '../Banner/Banner';
@@ -10,8 +10,8 @@ const Body = () => {
         <div style={{marginBottom:'100px'}}>
             <Banner/>
             
-            <div className="row container mx-auto g-4 shadow pb-4 rounded mb-5">
-            <h1 className="text-center mb-4 text-danger"><span className="text-success">Our</span> Courses</h1>
+            <div className="row container mx-auto g-4 shadow pb-4 border rounded mb-5">
+            <h1 className="text-center text-danger"><span className="text-success">Our</span> Courses</h1>
             {
                 courses.slice(0,4).map(course=> <Course 
                     key={course.id}
