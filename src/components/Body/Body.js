@@ -11,7 +11,7 @@ const Body = () => {
             <Banner/>
             
             <div className="row container mx-auto g-4 shadow pb-4 border rounded mb-5">
-            <h1 className="text-center text-danger"><span className="text-success">Our</span> Courses</h1>
+            <h1 className="text-center text-danger"><span className="text-success">Top</span> Courses</h1>
             {
                 courses.slice(0,4).map(course=> <Course 
                     key={course.id}
