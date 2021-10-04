@@ -1,0 +1,11 @@
+.banner-container{
+    background-image: url(../../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(238, 123, 123, 0.123);
+}
+.banner-text{
+    margin-left: 10%;
+    padding: 100px 0;
+}
